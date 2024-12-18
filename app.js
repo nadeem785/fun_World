@@ -105,7 +105,7 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }));
 
 
-const dbUrl="mongodb://127.0.0.1:27017/fun_World"
+const dbUrl=process.env.DB_URL
 const store = MongoStore.create({
   mongoUrl: dbUrl,
   touchAfter: 24 * 60 * 60,
