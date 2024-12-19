@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "20.15.1"
+  },
   "name": "funworld",
   "version": "1.0.0",
   "main": "index.js",
