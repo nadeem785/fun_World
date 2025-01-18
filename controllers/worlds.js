@@ -96,7 +96,7 @@ const world=await World.findById(id).populate({
     }
 
 }).populate("owner");
-
+console.log(world)
 if(!world){
     req.flash("error","You cannot edit a non-existent world!!")
      return res.redirect("/worlds");
